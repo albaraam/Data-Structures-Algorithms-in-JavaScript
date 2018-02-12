@@ -1,19 +1,19 @@
 var Stack = function () {
-	this.storage = [];
+    this._storage = [];
 }
 
 Stack.prototype.push = function(item) {
-	this.storage.push(item);
+    this._storage.push(item);
 };
 
 Stack.prototype.pop = function() {
-	return this.storage.pop();
+    return this._storage.pop();
 };
 
 Stack.prototype.peek = function() {
-	return this.storage[this.storage.length - 1];
+    return this._storage[this._storage.length - 1];
 }
 
 Stack.prototype.count = function() {
-	return this.storage.length;
+    return this._storage.length;
 };
