@@ -7,6 +7,7 @@ Stack.prototype.push = function(item) {
     this._storage[this._size] = item;
     this._size++;
 };
+
 Stack.prototype.pop = function() {
     if(this._size == 0){
         return undefined;

@@ -8,6 +8,7 @@ Queue.prototype.enqueue = function(item) {
     this._storage[this._tail] = item;
     this._tail++;
 };
+
 Queue.prototype.dequeue = function() {
     if(this.count() == 0){
         return undefined;
